@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://8arbhr7ky0tq"]
+
+[node name="mob_tamplate" type="CharacterBody2D"]
+
+[node name="colisao" type="CollisionShape2D" parent="."]
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="colisao" type="CollisionShape2D" parent="hitbox"]
+
+[node name="textura" type="Sprite2D" parent="."]
+
+[node name="animacao" type="AnimationPlayer" parent="."]

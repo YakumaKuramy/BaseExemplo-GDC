@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjsfkpc5ia6su"]
+
+[ext_resource type="PackedScene" uid="uid://do6yfyvomn4es" path="res://cenas/huds/pause.tscn" id="1_p4tth"]
+[ext_resource type="PackedScene" uid="uid://d4cg87slv4k2w" path="res://cenas/huds/hud.tscn" id="2_cpwh6"]
+[ext_resource type="PackedScene" uid="uid://bqysy5gyqf3qi" path="res://cenas/huds/fim_jogo.tscn" id="3_wuv8h"]
+[ext_resource type="PackedScene" uid="uid://dnwic8ctmbxm1" path="res://cenas/huds/fase_completa.tscn" id="4_61dt5"]
+[ext_resource type="PackedScene" uid="uid://ixglm4k3e21q" path="res://cenas/entidades/jogador/jogador.tscn" id="5_tqwsf"]
+[ext_resource type="PackedScene" uid="uid://c4e33cbasqn7i" path="res://cenas/entidades/mobs/snail.tscn" id="6_1mc4d"]
+
+[node name="jogo" type="Node2D"]
+
+[node name="pause" parent="." instance=ExtResource("1_p4tth")]
+
+[node name="hud" parent="." instance=ExtResource("2_cpwh6")]
+
+[node name="fim_jogo" parent="." instance=ExtResource("3_wuv8h")]
+
+[node name="fase_completa" parent="." instance=ExtResource("4_61dt5")]
+
+[node name="jogador" parent="." instance=ExtResource("5_tqwsf")]
+position = Vector2(180, 320)
+
+[node name="snail" parent="." instance=ExtResource("6_1mc4d")]
+position = Vector2(252, 344)

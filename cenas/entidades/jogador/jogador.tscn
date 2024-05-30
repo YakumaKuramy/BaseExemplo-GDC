@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://ixglm4k3e21q"]
+
+[ext_resource type="Texture2D" uid="uid://bu25wyhjp21uu" path="res://assets/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png" id="1_7mwmi"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rg6lp"]
+
+[node name="jogador" type="CharacterBody2D"]
+
+[node name="colisao" type="CollisionShape2D" parent="."]
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="colisao" type="CollisionShape2D" parent="hitbox"]
+
+[node name="textura" type="Sprite2D" parent="."]
+texture = ExtResource("1_7mwmi")
+
+[node name="animacao" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_rg6lp")
+}
+
+[node name="camera_jogador" type="Camera2D" parent="."]
